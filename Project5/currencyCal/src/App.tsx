@@ -42,7 +42,7 @@ const App = (): JSX.Element => {
       setTargetCurrency(targetValue.name);
     } else {
       return Snackbar.show({
-        text: 'NOt a valid number to convert',
+        text: 'Not a valid number to convert',
         backgroundColor: '#F4BE2C',
         textColor: '#000000',
       });
@@ -69,7 +69,7 @@ const App = (): JSX.Element => {
         </View>
         <View style={styles.bottomContainer}>
           <FlatList
-            numColumns={3}
+            numColumns={1}
             data={currencyByRupee}
             keyExtractor={item => item.name}
             renderItem={({item}) => (
